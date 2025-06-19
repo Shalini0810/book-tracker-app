@@ -1,0 +1,103 @@
+/* Reset some default browser styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.App {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="text"],
+input[type="submit"],
+button {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+}
+
+button,
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Book list styling */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f1f3f5;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+li:hover {
+  background-color: #e0e6ea;
+}
+
+.book-details {
+  flex-grow: 1;
+}
+
+.status {
+  font-style: italic;
+  margin-left: 10px;
+  color: #6c757d;
+}
+
+.book-buttons button {
+  margin-left: 10px;
+  background-color: #6c757d;
+}
+
+.book-buttons button:first-child {
+  background-color: #28a745; /* Toggle button - green */
+}
+
+.book-buttons button:last-child {
+  background-color: #dc3545; /* Delete button - red */
+}
