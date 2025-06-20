@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import AddBookForm from "./components/AddBookForm";
 import BookList from "./components/BookList";
+import GeminiChat from "./components/Gemini";
 import './App.css';
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
       <h1>📚 Book Tracker</h1>
       <AddBookForm onAdd={addBook} />
       <BookList books={books} onToggle={toggleBook} onDelete={deleteBook} />
+      <GeminiChat />
     </div>
   );
 }
